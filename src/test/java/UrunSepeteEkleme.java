@@ -1,5 +1,7 @@
 import com.thoughtworks.gauge.Step;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
+import org.openqa.selenium.interactions.touch.TouchActions;
 
 public class UrunSepeteEkleme extends Driver {
     MobileElement mobileElement;
@@ -37,8 +39,6 @@ public class UrunSepeteEkleme extends Driver {
     @Step("Sepetime Git")
     public void sepeteGit() {
         mobileElement = (MobileElement) appiumDriver.findElementByXPath("/hierarchy/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RelativeLayout[3]");
-        mobileElement.getLocation();
-        mobileElement.click();
 
         //mobileElement = (MobileElement) appiumDriver.findElementByXPath("/hierarchy/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RelativeLayout[3]");
         //mobileElement.click();

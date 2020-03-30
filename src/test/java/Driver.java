@@ -4,7 +4,6 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.remote.MobilePlatform;
-import org.junit.After;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.MalformedURLException;
@@ -15,7 +14,7 @@ public class Driver {
     public static AppiumDriver appiumDriver;
 
     @BeforeScenario
-    public void initializeDriver() {
+    public void initializeDriver(){
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android");
@@ -35,7 +34,7 @@ public class Driver {
     }
 
     @AfterScenario
-    public void closeDriver() {
+    public void closeDriver(){
         //appiumDriver.quit();
     }
 }
